@@ -2,8 +2,13 @@
 public class C04ej02{
    public static void main(String[] args){
       int hora=0;
+      
       System.out.println("Inserte una hora, (sin minutos ni segundos)");
+      try{
       hora=Integer.parseInt(System.console().readLine());
+    } catch(NumberFormatException e){
+      System.out.println("Enteros!!");
+      }
       String res;
       if ( hora >=6 && hora<=12 ){
         res="Buenos dias";

@@ -8,9 +8,12 @@ public class C04ej06{
     double tiempo;
     System.out.println("Inserte la altura desde la que quiere lanzar el objto");
     altura= Double.parseDouble(sc.next());
-    tiempo=Math.sqrt((2.0*altura)/g);
-    
-    System.out.println("El tiempo que tarda en caer es "+tiempo+" s");
+    if (altura>0){
+      tiempo=Math.sqrt((2.0*altura)/g);
+      System.out.println("El tiempo que tarda en caer es "+tiempo+" s");
+    }else{
+      System.out.println("ERROR: Altura no puede ser negativa");
+    }
     
   }
   

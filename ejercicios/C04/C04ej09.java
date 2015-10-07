@@ -15,10 +15,10 @@ public class C04ej09{
      if ((a==0)&&(b!=0)&&(c==0)){               //bx=0
        System.out.println("No existe solucion");
      }
-     if ((a==0)&&(b!=0)&&(c!=0)){               //ax²=0
+     if ((a!=0)&&(b==0)&&(c==0)){               //ax²=0
        System.out.println("No existe solucion");
      }else
-    if ((a!=0)&&(b==0)&&(c==0)){               //bx+c=0
+    if ((a==0)&&(b!=0)&&(c!=0)){               //bx+c=0
       System.out.println("x= "+(-c/b));
     }else
     if ((a!=0)&&(b==0)&&(c!=0)){               //ax²+c=0
@@ -33,11 +33,12 @@ public class C04ej09{
       if(temp<0){
         System.out.println("Error: Numero dentro de la raiz negatio: "+ temp);
       }else{
-        sol=(-b+Math.sqrt(temp))/2*a;
-        sol2=(-b-Math.sqrt(Math.pow(-b,2)-4*a*c))/2*a;
+        sol=(-b+(Math.sqrt(temp)))/(2*a);
+        sol2=(-b-Math.sqrt(Math.pow(-b,2)-4*a*c))/(2*a);
         System.out.println("x1= "+sol+", x2= "+sol2);
+    
       }
     }
-    
+     
   }
 }

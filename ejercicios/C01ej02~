@@ -1,8 +1,0 @@
-public class C01ej02{
-	public static void main(String[] args){
-
-	System.out.print("Hola me llamo Carlos Jurado Moreno \n Telefono: 699558675 \n Direccion: calle inventada nº123\n");
-	}
-
-
-}

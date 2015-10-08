@@ -9,16 +9,16 @@ public class C04ej10{
     mes=Integer.parseInt(sc.next());
     if(mes<1||mes>12){
       System.out.println("ERROR MES INCORRECTO");
-    }else{
+    }else
       if (dia<0||dia>31){
         System.out.println("ERROR DIA INCORRECTO");
-      }else{
+      }else
         if(mes==2&&dia>28){
           System.out.println("ERROR DIA INCORRECTO");
-        }else{
+        }else
           if((mes==4||mes==6||mes==9||mes==11)&&(dia==31)){
             System.out.println("ERROR DIA INCORRECTO");
-          }else{
+          }else
             if((mes==3&&dia>=21)||(mes==4&&dia<=20)){
               System.out.println("Eres Aries");
             }
@@ -55,10 +55,5 @@ public class C04ej10{
             if((mes==2&&dia>=21)||(mes==3&&dia<=20)){
               System.out.println("Eres Piscis");
             }
-          }
-        }
-      }
-    }
-    
   }
 }

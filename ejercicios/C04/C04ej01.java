@@ -4,7 +4,7 @@ public class C04ej01{
     String dia;
     String clase="null";
     System.out.println("Inserte un dia de la semana (sin tildes y minusculas)");
-    dia=System.console().readLine();
+    dia=(System.console().readLine().toLowerCase());
     switch(dia){
     
       case "lunes":

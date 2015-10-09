@@ -7,6 +7,7 @@
  */
  public class C05ej09{
    public static void main(String[] args){
+     
      double numero=0;
      int digitos=0;
      

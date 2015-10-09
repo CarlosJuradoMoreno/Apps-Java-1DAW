@@ -3,7 +3,7 @@
 *Muestra los numeros multiplos de 5 del 0 al 100 con bucle while
 *
 */
-public class C05ej2{
+public class C05ej02{
   public static void main (String[] args){
     String multiplos="";
     int contador=0;

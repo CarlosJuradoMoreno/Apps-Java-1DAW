@@ -12,9 +12,9 @@
      boolean res=false;
      int contador=3;
      System.out.print("Introduzca un numero entero para averiguar si es primo o no ");
-     numero=Integer.parseInt(System.console().readLine());
+      numero=Integer.parseInt(System.console().readLine());
      
-     switch(numero){
+     switch(Math.abs(numero)){
        case 0:
        res=false;
        break;
@@ -25,15 +25,13 @@
        res=false;
        break;
       }
-      System.out.println(res);
        System.out.println(numero);
-       while ((contador>=3)&&(contador<(numero))&&(!res)){
+       while ((contador>=3)&&(contador<(Math.abs(numero)))&&(!res)){
          if ((numero%contador)==0){
            res=true;
          }else{
            res=false;
          }
-          System.out.println(contador+"\t"+res);
          contador++;
        }
        

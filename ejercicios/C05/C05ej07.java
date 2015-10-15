@@ -16,7 +16,8 @@ public class C05ej07{
     Scanner sc= new Scanner(System.in);
     int codigo=1234;
     boolean flag=false;
-    
+    int fallos=0;
+    int intentos=1;
     do{
       System.out.print("Inserte codigo: ");
       
@@ -25,8 +26,15 @@ public class C05ej07{
         flag=true;
       }else{
         System.out.println("Lo siento esa no es la combinacion");
+        System.out.println("Llevas "+intentos+" Intentos");
       }
+      fallos++;
+      intentos++;
       
-    }while(!flag);
+    }while(!flag&& fallos<4);
+    
+    if(fallos==4){
+      System.out.println("Error, bloqueo de seguridad");
+    }
   }
 }

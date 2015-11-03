@@ -31,7 +31,6 @@ public class C05ej26{
         System.out.print(posicion+" ");
         
       }
-    
       cambio= (int)cambio/10;
       posicion++;
     }

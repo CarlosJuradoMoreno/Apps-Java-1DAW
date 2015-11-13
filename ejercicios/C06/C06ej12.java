@@ -9,11 +9,12 @@
  */
 public class C06ej12 {
   public static void main(String[] args) {
-    boolean i=false;
-    while(1=1){
+
+    while(1==1){
       int car=(int)(Math.random()*95)+32;
+      char caracter;
       caracter=(char)car;
-      System.out.print(caracter);
+      System.out.print(".I."+caracter);
     }
   }
 }

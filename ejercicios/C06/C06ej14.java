@@ -16,7 +16,7 @@ public class C06ej14{
     int inferior=0;
    
     do{
-    System.out.println("Su numero mayor, menos o igual a : "+numero);
+    System.out.println("Su numero mayor, menor o igual a : "+numero);
     caso=System.console().readLine();
     
     switch(caso){
@@ -33,7 +33,7 @@ public class C06ej14{
     break;
     case "igual":
     acertado=true;
-    System.out.println("Has acertado!");
+    System.out.println("Lo conseguí!");
     break;
     default:
     System.out.println("Inserte dato correcto");

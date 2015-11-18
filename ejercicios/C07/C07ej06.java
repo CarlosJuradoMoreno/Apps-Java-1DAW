@@ -26,8 +26,10 @@ public class C07ej06{
 				posicionSiguiente=numeros[i];
 				numeros[i]=aux;
 			}
+			
 		}
 		System.out.print(numeros);
+
 		for(int imprimir:numeros){
 			System.out.println(imprimir);
 		}

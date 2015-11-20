@@ -18,7 +18,7 @@ public class C07ej11{
 		boolean primo=true;
 
 		do{
-			System.out.print("Inserte el "+(contador+1)+" numero: ");
+			System.out.print("Inserte el "+(contador+1)+" numero: ");		//Insertamos datos en el array
 			numero=Integer.parseInt(System.console().readLine());
 			numeros[contador]=numero;
 			
@@ -51,6 +51,8 @@ public class C07ej11{
 			numeros[i]=noPrimos[indiceNoPrimo];
 			indiceNoPrimo++;
 		}
+
+		//imprimir array
 		for(int i:numeros){
 			System.out.print(i+" ");
 		}	    

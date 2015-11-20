@@ -18,12 +18,12 @@ public class C07ej12{
 		int numActual=0;
 		int numInicio;
 		int numFin;
+
 				do{
 			System.out.print("Inserte posicion inicial y final (4 9)");
 			inicio=Integer.parseInt(sc.next());
 			fin=Integer.parseInt(sc.next());
 		}while ((inicio>9||fin>9)||(inicio<0||fin<0)||inicio>fin);
-
 
 		do{
 			System.out.print("Inserte el "+(contador+1)+" numero: ");
@@ -44,6 +44,7 @@ public class C07ej12{
 				numSiguiente=numActual;
 			}
 		}
+
 		for (int i=fin;i<numeros.length;i++){
 			if(i==fin){
 				numSiguiente=numeros[i];
@@ -57,7 +58,8 @@ public class C07ej12{
 		}
 
 		for(int imprimir:numeros){
-			System.out.println(imprimir);
+			System.out.print(imprimir+" ");
 		}
+		sc.close();
 	}
 }

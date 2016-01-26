@@ -30,8 +30,6 @@ public class C07biej06{
 
 				if(!esta){
 					m[f][c]=aleatorio;
-				
-
 
 					if((f==0)&&(c==0)){
 						maximo=m[f][c];							//Almacenamos el 1º valor como maximo y minimos y guardamos las coordenadas del mismo

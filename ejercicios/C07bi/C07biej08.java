@@ -5,7 +5,7 @@ con las letras de la a a la h y las filas se indican del 1 al 8.
 *@author Carlos Jurado Moreno
 **/
 public class C07biej08{
-	public static void main(String[] args) {
+	 public static void main(String[] args) {
 		int[][] tablero = new int[8][8];
 		char letra;
 		int posicionNum;
